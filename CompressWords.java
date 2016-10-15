@@ -5,16 +5,17 @@ public void class compressWord{
 compress(int X[],int L,int Y[]){
 int i,p,n;
 int h;
-
+int X[]={a,b,b,c,c,c,d,d,d,d,e,e,e,e,e};
+int L=X.length;
 h=X[0];
 p=0;
 n=0;
 
 for(i=0;i<1,1)
     {
-  if(x[]!=h)
+  if(x[i]!=h)
   {
-      if()
+      if(n>=4)
       {
       Y[p-2]="*";
       Y[p-1]=n;
