@@ -25,6 +25,7 @@ for(i=0;i<4;i++)
       p=p+1;
       n=1;
   }else{
+    n=n+1;
   if(n>=4)
   {
     if(i==L-1)
