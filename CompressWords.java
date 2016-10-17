@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class CompressLetter {
     public static void main(String[] args) {
         String[] X = {"a","b","b","c","c","c","d","d","d","d","e","e","e","e","e"};
