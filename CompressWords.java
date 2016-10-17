@@ -1,27 +1,23 @@
-
-
-
-import java.util.ArrayList;
-
 public class CompressLetter {
     public static void main(String[] args) {
         String[] X = {"a","b","b","c","c","c","d","d","d","d","e","e","e","e","e"};
         int i, n = 0;
         int L = X.length;
-       ArrayList Y = new ArrayList();
-        String h = X[0];
         int p = 0;
+       String[] Y = new String[L];
+        String h = X[0];
+
         for(i = 0;i < L;i++)
     {
         if(X[i]!=h)
         {
             if(n>=4)
             {
-                Y.add("*");
-                Y.add(Integer.toString(n));
+                Y[p-2]=("*");
+                Y[p-1]=(Integer.toString(n));
             }
           
-          Y.add(X[i]);
+          Y[p]=X[i];
             h=X[i];
             p=p+1;
             n = 1;
@@ -33,16 +29,17 @@ public class CompressLetter {
         {
           if(i==L-1)
           {
-            Y.add("*");
-            Y.add(Integer.toString(n));
+        	  Y[p-2]=("*");
+              Y[p-1]=(Integer.toString(n));
           }
         }
           else{
-           Y.add(X[i]);
+        	  Y[p]=X[i];
             p=p+1;
           }
         }
     }
-        System.out.println(Y);
+        
+        System.out.println(Arrays.toString(Y));
     }    
 }
