@@ -1,0 +1,13 @@
+int M,N;
+R[M+1][N+1];
+
+CreateMaze()
+
+
+routeMaze()
+
+
+
+
+
+printMaze()
